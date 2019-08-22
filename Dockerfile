@@ -9,5 +9,4 @@ COPY start-master.sh /start-master.sh
 COPY start-worker.sh /start-worker.sh
 RUN wget ftp://ita.ee.lbl.gov/traces/NASA_access_log_Jul95.gz && \
     gunzip  NASA_access_log_Jul95.gz
-COPY NASA_access_log_Jul95 /data
 COPY topnanalysis_2.11-1.0.jar /spark/jars/topnanalysis_2.11-1.0.jar
